@@ -20,7 +20,7 @@ export const NavItem = ({ label, icon, href, active }: Props) => {
     <Link
       href={href}
       className={`flex items-center gap-6 py-3 ${
-        active || isMe ? "opacity-100" : "opacity-80"
+        active || isMe ? "opacity-100" : "opacity-50"
       } `}
     >
       <FontAwesomeIcon icon={icon} size="lg" />

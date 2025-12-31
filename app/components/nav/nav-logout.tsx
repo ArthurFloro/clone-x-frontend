@@ -14,7 +14,7 @@ export const NavLogout = () => {
   return (
     <div
       onClick={handleClick}
-      className={` cursor-pointer flex items-center gap-6 py-3 opcity-50 hover:opacity-100`}
+      className={` cursor-pointer flex items-center gap-6 py-3 opacity-50 hover:opacity-100`}
     >
       <FontAwesomeIcon icon={faArrowRightFromBracket} size="lg" />
       <div className="text-lg">Sair</div>

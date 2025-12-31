@@ -20,7 +20,7 @@ export default function Layout({ children }: Props) {
             <NavItem href="/profile" icon={faUser} label="Meu perfil" />
           </nav>
         </div>
-        <div>
+        <div className="mb-6 flex flex-col gap-4">
           <NavLogout />
         </div>
       </section>
