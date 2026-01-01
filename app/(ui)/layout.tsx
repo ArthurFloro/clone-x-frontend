@@ -4,6 +4,7 @@ import { NavItem } from "../components/nav/nav-item";
 import { faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
 import { NavLogout } from "../components/nav/nav-logout";
 import { NavMyProfile } from "../components/nav/nav-myprofile";
+import { SearchInput } from "../components/ui/search-input";
 
 type Props = {
   children: React.ReactNode;
@@ -27,8 +28,8 @@ export default function Layout({ children }: Props) {
         </div>
       </section>
       <section className="flex-1 max-w-lg">{children}</section>
-      <aside className="hidden lg:flex flex-col gap-6 sticky top-0 h-fit w-96 px-8 py-6 border-l-2 border-gray-900">
-        DIREITA
+      <aside className="flex lg:flex flex-col gap-6 sticky top-0 h-fit w-96 px-8 py-6 border-l-2 border-gray-900">
+        <SearchInput hideOnSearch />
       </aside>
     </main>
   );
