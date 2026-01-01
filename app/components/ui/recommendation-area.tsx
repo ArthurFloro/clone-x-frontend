@@ -1,5 +1,8 @@
 import { user } from "@/app/data/user";
-import { RecommendationItem } from "./recommendation-item";
+import {
+  RecommendationItem,
+  RecommendationItemSkeleton,
+} from "./recommendation-item";
 
 export const RecommendationArea = () => {
   return (
@@ -7,7 +10,7 @@ export const RecommendationArea = () => {
       <h2 className="text-xl p-6">Quem seguir</h2>
       <div className="flex flex-col gap-4 p-6 pt-0">
         <RecommendationItem user={user} />
-        <RecommendationItem user={user} />
+        <RecommendationItemSkeleton />
       </div>
     </div>
   );
