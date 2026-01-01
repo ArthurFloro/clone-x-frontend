@@ -6,7 +6,7 @@ import {
   IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { KeyboardEvent, useState } from "react";
 
 type Props = {
   placeholder: string;
@@ -15,6 +15,7 @@ type Props = {
   filled?: boolean;
   password?: boolean;
   icon?: IconDefinition;
+  onEnter?: () => void;
 };
 
 export const Input = ({
@@ -24,8 +25,15 @@ export const Input = ({
   password,
   filled,
   icon,
+  onEnter,
 }: Props) => {
   const [showPassword, setShowPassword] = useState(false);
+
+  const handleKeyUp = (event: KeyboardEvent<HTMLInputElement>) => {
+    if (event.code.toLowerCase() === "enter" && onEnter) {
+      onEnter();
+    }
+  };
 
   return (
     <div
@@ -42,6 +50,7 @@ export const Input = ({
         placeholder={placeholder}
         value={value}
         onChange={(e) => onChange && onChange(e.target.value)}
+        onKeyUp={handleKeyUp}
         type={password && !showPassword ? "password" : "text"} // so mostra a senha se showPassword for true
       />
       {password && (
