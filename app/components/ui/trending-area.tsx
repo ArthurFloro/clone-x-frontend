@@ -1,4 +1,4 @@
-import { TrendingItem } from "./trending-item";
+import { TrendingItem, TrendingItemSkeleton } from "./trending-item";
 
 export const TrendinArea = () => {
   return (
@@ -7,8 +7,8 @@ export const TrendinArea = () => {
       <div className="flex flex-col gap-4 p-6 pt-0">
         <TrendingItem label="#Teste" count={1293} />
         <TrendingItem label="#Teste" count={1293} />
-        <TrendingItem label="#Teste" count={1293} />
-        <TrendingItem label="#Teste" count={1293} />
+        <TrendingItemSkeleton />
+        <TrendingItemSkeleton />
       </div>
     </div>
   );
