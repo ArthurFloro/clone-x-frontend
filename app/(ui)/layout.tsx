@@ -6,6 +6,7 @@ import { NavLogout } from "../components/nav/nav-logout";
 import { NavMyProfile } from "../components/nav/nav-myprofile";
 import { SearchInput } from "../components/ui/search-input";
 import { TrendinArea } from "../components/ui/trending-area";
+import { RecommendationArea } from "../components/ui/recommendation-area";
 
 type Props = {
   children: React.ReactNode;
@@ -32,6 +33,7 @@ export default function Layout({ children }: Props) {
       <aside className="flex lg:flex flex-col gap-6 sticky top-0 h-fit w-96 px-8 py-6 border-l-2 border-gray-900">
         <SearchInput hideOnSearch />
         <TrendinArea/>
+        <RecommendationArea />
       </aside>
     </main>
   );
