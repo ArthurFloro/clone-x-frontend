@@ -1,12 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "ui-avatars.com",
-        port: "",
-        pathname: "/api/**", // Permite caminhos que começam com /api/
+        hostname: "**", // O '**' permite qualquer domínio
+      },
+      // Se precisar suportar http também, adicione outro objeto:
+      {
+        protocol: "http",
+        hostname: "**",
       },
     ],
   },
