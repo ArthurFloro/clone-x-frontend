@@ -3,14 +3,11 @@ import { GeneralHeader } from "@/app/components/ui/general-header";
 import { Input } from "@/app/components/ui/input";
 import { TextArea } from "@/app/components/ui/textarea";
 import { user } from "@/app/data/user";
-import { faCamera, faLink, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faCamera, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Edit() {
-  const isMe = true;
-
   return (
     <div>
       <GeneralHeader backHref="/">
