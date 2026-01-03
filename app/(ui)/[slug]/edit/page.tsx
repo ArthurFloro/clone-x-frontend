@@ -1,6 +1,7 @@
 import { Button } from "@/app/components/ui/button";
 import { GeneralHeader } from "@/app/components/ui/general-header";
 import { Input } from "@/app/components/ui/input";
+import { TextArea } from "@/app/components/ui/textarea";
 import { user } from "@/app/data/user";
 import { faCamera, faLink, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -45,20 +46,24 @@ export default function Edit() {
       </section>
 
       <section className="p-6 flex flex-col gap-4">
-        <label >
+        <label>
           <p className="text-lg text-gray-500 mb-2">Nome</p>
           <Input placeholder="Digite seu nome" value={user.name} />
         </label>
-        <label >
+        <label>
           <p className="text-lg text-gray-500 mb-2">Bio</p>
-          
+          <TextArea
+            placeholder="Descreva você mesmo"
+            rows={4}
+            value={user.bio}
+          />
         </label>
-        <label >
+        <label>
           <p className="text-lg text-gray-500 mb-2">Link</p>
           <Input placeholder="Digite um link" value={user.link} />
         </label>
 
-        <Button label="Salvar alterações" size={1}/>
+        <Button label="Salvar alterações" size={1} />
       </section>
     </div>
   );
