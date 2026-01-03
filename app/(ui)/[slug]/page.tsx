@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Slug() {
-  const isMe = false;
+  const isMe = true;
 
   return (
     <div>
