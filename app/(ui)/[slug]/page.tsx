@@ -1,3 +1,4 @@
+import { ProfileFeed } from "@/app/components/profile/profile-feed";
 import { Button } from "@/app/components/ui/button";
 import { GeneralHeader } from "@/app/components/ui/general-header";
 import { user } from "@/app/data/user";
@@ -60,6 +61,7 @@ export default function Slug() {
           </div>
         </div>
       </section>
+      <ProfileFeed />
     </div>
   );
 }
