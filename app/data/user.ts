@@ -6,7 +6,7 @@ export const user: User = {
   avatar:
     "https://ui-avatars.com/api/?background=random&name=ArthurFloro&size=100",
   cover:
-    "https://br.freepik.com/fotos-gratis/cenario-do-mar-com-penhascos-durante-o-por-do-sol-papel-de-parede-perfeito_13060713.htm#fromView=keyword&page=1&position=27&uuid=649980f8-0d31-45f8-a599-476e5e9883b1&from_element=images_trends&query=Paisagem",
+    "https://www.santacruzpe.com.br/wp-content/uploads/2021/09/IMG-20210924-WA0078-1000x650.jpg",
   bio: "Frontend Developer and Tech Enthusiast",
   link: "https://github.com/ArthurFloro",
   postCount: 42,
